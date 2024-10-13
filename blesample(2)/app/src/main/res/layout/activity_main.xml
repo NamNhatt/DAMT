@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:descendantFocusability="beforeDescendants"
+    android:focusableInTouchMode="true"
+    android:paddingBottom="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    tools:context="com.example.blesample.MainActivity">
+
+    <TextView
+        android:id="@+id/status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SCAN YOUR DEVICE" />
+
+    <Button
+        android:id="@+id/StartScanButton"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginTop="40dp"
+        android:background="#4CAF50"
+        android:text="Scan"
+        android:textColor="@color/white"/>
+
+    <Button
+        android:id="@+id/StopScanButton"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginTop="40dp"
+        android:background="#F44336"
+        android:text="Stop Scanning"
+        android:textColor="@color/white" />
+
+    <Button
+        android:id="@+id/chuyen"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="40dp"
+        android:text="Main Screen" />
+
+    <TextView
+        android:id="@+id/PeripheralTextView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="100dp"
+        android:layout_marginBottom="80dp"
+        android:maxLines="30"
+        android:scrollbars="vertical" />
+
+    <Button
+        android:id="@+id/ReadButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:text="Read" />
+
+    <Button
+        android:id="@+id/StopReadButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:text="Stop Read" />
+
+
+    <Button
+        android:id="@+id/ConnectButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Connect to device with index: "
+        android:textColor="@color/white"
+        android:background="#4CAF50"
+        android:layout_alignParentBottom="true"/>
+
+    <Button
+        android:id="@+id/DisconnectButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Disconnect from device"
+        android:textColor="@color/white"
+        android:background="#F44336"
+        android:layout_alignParentBottom="true"/>
+
+    <EditText
+        android:id="@+id/InputIndex"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/textviewborder"
+        android:cursorVisible="false"
+        android:inputType="number"
+        android:paddingLeft="10dp"
+        android:singleLine="true" />
+</RelativeLayout>

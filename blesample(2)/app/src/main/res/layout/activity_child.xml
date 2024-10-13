@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".MainActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="60px"
+        android:background="#FFFFFF"
+        tools:context=".MainActivity">
+
+        <com.github.mikephil.charting.charts.LineChart
+            android:id="@+id/chart"
+            android:layout_width="match_parent"
+            android:layout_height="497dp" />
+
+        <TextView
+            android:id="@+id/nhiptim"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_background"
+            android:text="Nhịp tim/giây"
+            android:textStyle="bold"
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp"
+            android:textSize="25sp"
+            android:textColor="#F44336"
+            android:fontFamily="serif"
+            />
+        <TextView
+            android:id="@+id/spo2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_background"
+            android:text="Nồng độ Oxi"
+            android:textStyle="bold"
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp"
+            android:textSize="25sp"
+            android:textColor="#3F51B5"
+            android:fontFamily="serif"
+            />
+        <TextView
+            android:id="@+id/ketqua"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_background"
+            android:text="Tình trạng sức khỏe:"
+            android:textStyle="bold"
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp"
+            android:textSize="25sp"
+            android:textColor="#009688"
+            android:fontFamily="serif"
+            />
+    </LinearLayout></ScrollView>
